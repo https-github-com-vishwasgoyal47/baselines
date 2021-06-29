@@ -4,7 +4,7 @@ import os
 
 
 
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 DESCRIPTION = 'a python package to benchmarks algorithms against various datasets'
 
 
@@ -16,7 +16,7 @@ setup(
     author_email="vishwasgoyal47@gmail.com",
     description=DESCRIPTION,
     packages=find_packages(),
-    install_requires=[],
+    install_requires=["seaborn"],
     keywords=[],
     # package_dir={'':'baseline'},
     classifiers=[
