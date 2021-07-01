@@ -1,7 +1,7 @@
 class Classification():
     def __init__(self) -> None:
         pass
-    def binaryClassification(self,dataset):
+    def classification(self,dataset):
         from sklearn.impute import SimpleImputer
         import numpy as np
         import pandas as pd
@@ -71,7 +71,16 @@ class Classification():
         y_pred = rfc.predict(X_test)
 
         rfc_score = f1_score(y_test,y_pred,average="weighted")
-        benchmark['rfc'] = rfc_score
+        benchmark['RandomForestClassifier'] = rfc_score
+
+        from xgboost import XGBClassifier
+        xgb = XGBClassifier()
+        xgb.fit(X_train,y_train)
+        y_pred = xgb.predict(X_test)
+
+        xgb_score = f1_score(y_test,y_pred,average = "weighted")
+        benchmark['XGBClassifier'] = xgb_score
+
         return benchmark
 
 
