@@ -28,7 +28,9 @@ a python package used for benchmarking algorithms over various datasets<br>
 
 <h1>How to use</h1><br>
 &nbsp;&nbsp;<h2>Data Class</h2><br>
-&nbsp;&nbsp;&nbsp;&nbsp;from baseline.Data import Data<br>
-&nbsp;&nbsp;&nbsp;&nbsp;data = Data()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;dataset_names = data.show_dataset()<br>
-&nbsp;&nbsp;&nbsp;&nbsp;dataset = data.load_dataset('name') &nbsp;&nbsp;&nbsp;&nbsp;name should be only from dataset_names <br>
+```python
+from baseline.Data import Data
+data = Data()
+dataset_names = data.show_dataset()
+dataset = data.load_dataset('name') #name should be only from dataset_names 
+```
