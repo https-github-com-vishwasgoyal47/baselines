@@ -32,5 +32,7 @@ a python package used for benchmarking algorithms over various datasets<br>
 from baseline.Data import Data
 data = Data()
 dataset_names = data.show_dataset()
-dataset = data.load_dataset('name') #name should be only from dataset_names 
+#name should be only from dataset_names 
+dataset = data.load_dataset('name') 
+
 ```
