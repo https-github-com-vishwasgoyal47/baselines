@@ -68,3 +68,4 @@ graph = Pipeline(dataset)
 #pipeline should only have sklearn components
 graph.show_graph(pipelineToBeShown)
 ```
+
