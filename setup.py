@@ -4,9 +4,13 @@ import os
 
 
 
-VERSION = '0.0.13'
+VERSION = '0.0.15'
 DESCRIPTION = 'a python package to benchmarks algorithms against various datasets'
 
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
 # Setting up
 setup(
@@ -18,6 +22,8 @@ setup(
     packages=find_packages(),
     install_requires=["seaborn","scikit-learn","xgboost"],
     keywords=[],
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     # package_dir={'':'baseline'},
     classifiers=[
         "Development Status :: 1 - Planning",
