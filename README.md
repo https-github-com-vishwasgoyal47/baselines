@@ -21,9 +21,14 @@ a python package used for benchmarking algorithms over various datasets<br>
 <h2>Pipeline Class:</h2><br>
 &nbsp; __init__ method:<br>
 &nbsp;&nbsp;parameters:<br>
-&nbsp;&nbsp;&nbsp;dataset (pandas dataframe)
+&nbsp;&nbsp;&nbsp;dataset (pandas dataframe)<br>
 &nbsp;show_graph method:<br>
 &nbsp;&nbsp;parameters:<br>
 &nbsp;&nbsp;&nbsp;pipeline_show (sklearn Pipeline object which will be inturn turned to graph)<br>
 
-<h1>How to use</h1>
+<h1>How to use</h1><br>
+&nbsp;&nbsp;<h2>Data Class</h2><br>
+&nbsp;&nbsp;&nbsp;&nbsp;from baseline.Data import Data<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data = Data()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dataset_names = data.show_dataset()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dataset = data.load_dataset('name') &nbsp;&nbsp;&nbsp;&nbsp;name should be only from dataset_names <br>
