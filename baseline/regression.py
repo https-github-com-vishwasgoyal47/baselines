@@ -16,9 +16,15 @@ import numpy as np
 import pandas as pd
 
 class Regression:
+    """
+    Benchmarks dataset on various regression algorithms
+    """
     def __init__(self) -> None:
         pass
     def regressor(self,dataset,resultantColumn):
+        """
+        takes dataset and resultant columns as input and returns dictionary of various algorithms and their explained scores
+        """
         dataset = pd.DataFrame(dataset)
         dataset[resultantColumn] = pd.to_numeric(dataset[resultantColumn],errors='coerce')
            

@@ -1,7 +1,13 @@
 class Classification():
+    """
+    Benchmarks classification algorithms on dataset
+    """
     def __init__(self) -> None:
         pass
     def classification(self,dataset):
+        """
+        preprocesses the dataset (input) and returns dictionary of various algorithms and their weighted f1 score 
+        """
         from sklearn.impute import SimpleImputer
         import numpy as np
         import pandas as pd
