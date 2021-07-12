@@ -1,27 +1,29 @@
 # baselines
 a python package used for benchmarking algorithms over various datasets<br>
 
-Data class : <br>
-&nbsp;   show_datasets : show available datasets<br>
-&nbsp;    load_dataset : load specific dataset (pass name as argument)<br>
+<h2>Data class :</h2> <br>
+&nbsp;   <h3>show_datasets :</h3> show available datasets<br>
+&nbsp;    <h3>load_dataset :</h3> load specific dataset (pass name as argument)<br>
 
-Classification class :<br>
-&nbsp;    classification method:<br>
+<h2>Classification class :</h2><br>
+&nbsp;    <h3>classification method:</h3><br>
 &nbsp;&nbsp;  parameters:<br>
 &nbsp;&nbsp;&nbsp;       dataset in csv format or pandas dataframe with classification column at last<br>
 &nbsp;&nbsp;       result:<br>
 &nbsp;         returns benchmark for dataset with various algorithms and its f1_score<br>
 
-Regression Class:<br>
-&nbsp;regressor method:<br>
+<h2>Regression Class:</h2><br>
+&nbsp;<h3>regressor method:</h3><br>
 &nbsp;&nbsp;parameters:<br>
-&nbsp;&nbsp;&nbsp;dataset (pandas dataframe)
+&nbsp;&nbsp;&nbsp;dataset (pandas dataframe)<br>
 &nbsp;&nbsp;&nbsp;resultantColumn (name of column which has the value to be predicted)
 
-Pipeline Class:<br>
+<h2>Pipeline Class:</h2><br>
 &nbsp; __init__ method:<br>
 &nbsp;&nbsp;parameters:<br>
 &nbsp;&nbsp;&nbsp;dataset (pandas dataframe)
 &nbsp;show_graph method:<br>
 &nbsp;&nbsp;parameters:<br>
-&nbsp;&nbsp;&nbsp;pipeline_show (sklearn Pipeline object which will be inturn turned to graph)
+&nbsp;&nbsp;&nbsp;pipeline_show (sklearn Pipeline object which will be inturn turned to graph)<br>
+
+<h1>How to use</h1>
