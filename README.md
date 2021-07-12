@@ -57,7 +57,7 @@ print(results)
 from baseline.regression import Regression
 regressors = Regression()
 # also pass the resultant column
-results = regressors.regression(dataset , resultantColumn)
+results = regressors.regressor(dataset , resultantColumn)
 print(results)
 
 ```
@@ -68,4 +68,3 @@ graph = Pipeline(dataset)
 #pipeline should only have sklearn components
 graph.show_graph(pipelineToBeShown)
 ```
-
