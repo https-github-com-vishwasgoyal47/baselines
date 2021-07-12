@@ -61,3 +61,10 @@ results = regressors.regression(dataset , resultantColumn)
 print(results)
 
 ```
+## Pipeline Class
+```python
+from baseline.pipeline import Pipeline
+graph = Pipeline(dataset)
+#pipeline should only have sklearn components
+graph.show_graph(pipelineToBeShown)
+```
