@@ -41,6 +41,23 @@ from baseline.Data import Data
 data = Data()
 dataset_names = data.show_dataset()
 #name should be only from dataset_names 
-
 dataset = data.load_dataset('name') 
+```
 
+## Classification Class
+```python
+from baseline.classification import Classification
+classifier = Classification()
+# dataset's last column should be the column to be classified
+results = classifier.classification(dataset)
+print(results)
+```
+## Regression Class
+```python
+from baseline.regression import Regression
+regressors = Regression()
+# also pass the resultant column
+results = regressors.regression(dataset , resultantColumn)
+print(results)
+
+```
