@@ -18,7 +18,7 @@ load specific dataset (pass name as argument)
 ##### parameters:
 ###### dataset in csv format or pandas dataframe with classification column at last
 ##### result:
-####### returns benchmark for dataset with various algorithms and its f1_score
+###### returns benchmark for dataset with various algorithms and its f1_score
 
 ## Regression Class:
 ### regressor method:
