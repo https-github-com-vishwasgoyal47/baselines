@@ -18,10 +18,16 @@ import graphviz
 
 
 class Pipeline:
+    """
+    Pipeline class takes dataset as input and has methods to view graph
+    """
     dataset = None
     def __init__(self,dataset):
         self.dataset = pd.DataFrame(dataset)
     def show_graph(self,pipeline_show):
+        """
+        Takes pipeline as input of given dataset and saves the dot graph
+        """
         listOfItems =[]
         def pipetolist(pipel,listOfParameters = None):
             if 'steps' in pipel:

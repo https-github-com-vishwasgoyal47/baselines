@@ -4,7 +4,7 @@ import os
 
 
 
-VERSION = '0.0.15'
+VERSION = '0.0.16'
 DESCRIPTION = 'a python package to benchmarks algorithms against various datasets'
 
 from os import path
