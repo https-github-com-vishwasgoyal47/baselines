@@ -1,10 +1,21 @@
-from sklearn.preprocessing import StandardScaler, OrdinalEncoder
-from sklearn.impute import SimpleImputer
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.ensemble import RandomForestRegressor
-import graphviz
+from sklearn.pipeline import *
+from sklearn.naive_bayes import *
+from sklearn.preprocessing import *
+from sklearn.svm import *
+from sklearn.decomposition import *
+from sklearn.model_selection import *
+from sklearn.linear_model import *
+from sklearn.compose import *
+from sklearn.feature_extraction.text import *
+from sklearn.impute import *
+from sklearn.ensemble import *
+from sklearn.metrics import *
+from sklearn.neural_network import *
+from xgboost import *
+import numpy as np
 import pandas as pd
+import graphviz
+
 
 class Pipeline:
     dataset = None
