@@ -1,0 +1,23 @@
+site_name: Base2lines
+site_url: https://example.com/
+repo_name: 'Fork on GitHub'
+repo_url: 'https://github.com/https-github-com-vishwasgoyal47/baselines/'
+
+theme:
+    name: readthedocs
+    nav_style: dark
+nav:
+- Home: index.md
+- Installation:
+  - For mac: Installation/installation_mac.md
+  - For windows: Installation/installation_windows.md
+- Introduction:
+  - Regression Class: Introduction/regression.md
+  - Data Class: Introduction/data.md
+  - Classification Class : Introduction/classification.md
+  - Pipeline Class: Introduction/pipeline.md
+- Use Example:
+  - Regression Class: Usage/regression.md
+  - Data Class: Usage/data.md
+  - Classification Class : Usage/classification.md
+  - Pipeline Class: Usage/pipeline.md
