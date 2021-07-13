@@ -2,6 +2,7 @@ site_name: Base2lines
 site_url: https://example.com/
 repo_name: 'Fork on GitHub'
 repo_url: 'https://github.com/https-github-com-vishwasgoyal47/baselines/'
+edit_uri: "blob/main/docs/docs/"
 
 theme:
     name: readthedocs
